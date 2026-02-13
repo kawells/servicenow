@@ -1,0 +1,246 @@
+/* ==UserStyle== 
+@name ServiceNow Dracula
+@description Dracula theme for Service Now.
+@author kawells
+@namespace https://github.com/kawells
+@version 1.0
+==/UserStyle== */
+@-moz-document regexp("https:\\/\\/([a-zA-Z0-9-]*(?<!preprod)\\.service-now\\.com|mysupport\\.[a-zA-Z0-9-]*\\.[a-zA-Z]*)\\/now?(\\/[a-zA-Z0-9-._~:/?#[\\]@!$&'()*+,;=%]*)?") {
+    :root {        
+        /* Main Background Colors */
+        --now-color_background--primary: 33, 34, 44;
+        --now-color_background--secondary: 40, 42, 54;
+        
+        /* Right Column Background */
+        --now-color_surface--brand-1: 40, 42, 54;
+        
+         /* Left Sidebar */
+        --now-toolbar-nav--background-color-start: 33, 34, 44;
+        --now-toolbar-nav--background-color-end: 33, 34, 44;
+        
+        /* Right Sidebar */
+        --now-color_surface--brand-2: 40, 42, 54;
+        
+        /* Tab Bar */
+        --now-color_background--tertiary: 40, 42, 54;
+        --now-color_chrome--brand-5: 40, 42, 54;
+        
+        /* Active Tab (CMDB) */
+        --now-color_chrome--brand-8: 33, 34, 44;
+        
+        /* Updated Tab */
+        --now-color--secondary-0: 40, 42, 54;
+        
+        /* Hover Tab */
+        --now-color--primary-0: 33, 34, 44;
+
+        /* Search Box */
+        --now-unified-nav_menu-filter--background-color--hover: 40, 42, 54;
+        --now-unified-nav_menu-filter--background-color: 40, 42, 54;
+        
+        /* Menu Background */
+        --now-unified-nav_menu--background-color: 33, 34, 44;
+        
+        /* Cards */
+        --now-card--background-color: 40, 42, 54;
+        
+        /* CMDB Header */
+        --now-color_brand--secondary: 33, 34, 44;
+       
+        /* Input Fields */
+        --now-form-field--background-color: 40, 42, 54;
+        --now-form-field--background-color--hover: 40, 42, 54;
+        --now-form-field--background-color--focus: 40, 42, 54;
+        --now-dropdown-list--background-color--focus: 40, 42, 54;
+        
+        /* Accent Colors & Unused Rules */
+        --now-accordion--color: 255, 121, 198;
+        --now-button--bare_primary--background-color--active: 255, 121, 198;
+        --now-button--bare_primary--background-color--hover: 255, 121, 198;
+        --now-button--bare_primary--background-color--selected_active: 255, 121, 198;
+        --now-button--bare_primary--background-color--selected_hover: 255, 121, 198;
+        --now-button--bare_primary--color--hover: 163, 149, 20;
+        --now-button--bare_primary--color--selected: 255, 184, 108;
+        --now-button--bare_primary--color--selected_hover: 163, 149, 20;
+        --now-button--bare_primary--color: 255, 184, 108;
+        --now-button--bare_secondary--background-color--active: 255, 121, 198;
+        --now-button--bare_secondary--background-color--hover: 255, 121, 198;
+        --now-button--bare_secondary--background-color--selected_active: 255, 121, 198;
+        --now-button--bare_secondary--background-color--selected_hover: 255, 121, 198;
+        --now-button--bare_secondary--color--active: 163, 149, 20;
+        --now-button--bare_secondary--color--hover: 255, 184, 108;
+        --now-button--bare_secondary--color--selected: 255, 121, 198;
+        --now-button--bare_secondary--color--selected_active: 163, 149, 20;
+        --now-button--bare_secondary--color--selected_hover: 255, 184, 108;
+        --now-button--bare_secondary--color: 255, 121, 198;
+        --now-button--primary--background-color--active: 163, 149, 20;
+        --now-button--primary--background-color--hover: 255, 184, 108;
+        --now-button--primary--background-color: 255, 121, 198;
+        --now-button--primary_high-contrast--color: 163, 149, 20;
+        --now-button--primary_highlighted--background-color--selected: 255, 121, 198;
+        --now-button--primary_highlighted--background-color--selected_active: 255, 121, 198;
+        --now-button--primary_highlighted--background-color--selected_hover: 255, 121, 198;
+        --now-button--secondary--background-color--active: 255, 121, 198;
+        --now-button--secondary--background-color--hover: 255, 121, 198;
+        --now-button--secondary--border-color--active: 163, 149, 20;
+        --now-button--secondary--border-color--hover: 255, 184, 108;
+        --now-button--secondary--border-color: 255, 121, 198;
+        --now-button--secondary--color--active: 163, 149, 20;
+        --now-button--secondary--color--hover: 255, 184, 108;
+        --now-button--secondary--color: 255, 121, 198;
+        --now-button--secondary_high-contrast--color--hover: 163, 149, 20;
+        --now-button--secondary_high-contrast--color: 255, 184, 108;
+        --now-button--secondary_highlighted--background-color--selected: 255, 121, 198;
+        --now-button--secondary_highlighted--background-color--selected_active: 255, 121, 198;
+        --now-button--secondary_highlighted--background-color--selected_hover: 255, 121, 198;
+        --now-button-circular--background-color--active: 163, 149, 20;
+        --now-button-circular--background-color--hover: 255, 184, 108;
+        --now-button-circular--background-color: 255, 121, 198;
+        --now-card--border-color--active: 163, 149, 20;
+        --now-card--border-color--selected: 255, 121, 198;
+        --now-card-header_tagline--secondary--color: 255, 121, 198;
+        /* --now-checkbox--background-color--active:40,40,77; */
+        --now-checkbox--background-color--checked: 255, 121, 198;
+        --now-checkbox--background-color--checked_active: 255, 121, 198;
+        --now-checkbox--background-color--checked_hover: 255, 184, 108;
+        /* --now-checkbox--background-color--hover:40,40,77; */
+        --now-checkbox--border-color--checked: 255, 121, 198;
+        --now-checkbox--border-color--checked_active: 255, 121, 198;
+        --now-checkbox--border-color--checked_focus: 255, 121, 198;
+        --now-checkbox--border-color--checked_hover: 255, 184, 108;
+        --now-checkbox--border-color--focus: 255, 121, 198;
+        --now-checkbox--border-color--hover: 255, 121, 198;
+        /* --now-color--focus-1:69,85,175; */
+        --now-color--focus-2: 255, 121, 198;
+        /* --now-color--focus-3:221,154,129; */
+        /* --now-color--interactive-0:42,43,82; */
+        /* --now-color--interactive-1:87,88,168; */
+        --now-color--interactive-2: 255, 121, 198;
+        --now-color--interactive-3: 163, 149, 20;
+        /* --now-color--interactive-4:228,228,255; */
+        /* --now-color--link-1:69,85,175; */
+        --now-color--link-2: 255, 121, 198;
+        --now-color--link-3: 255, 184, 108;
+        /* --now-color--link-4:221,154,129; */
+        --now-color--primary-1: 255, 121, 198;
+        --now-color--primary-2: 255, 184, 108;
+        --now-color--primary-3: 163, 149, 20;
+        /* --now-color--secondary-0:40,40,77; */
+        --now-color--secondary-1: 255, 121, 198;
+        --now-color--secondary-2: 255, 184, 108;
+        --now-color--secondary-3: 163, 149, 20;
+        /* --now-color_brand--neutral:79,86,100; */
+        /* --now-color_brand--primary:79,82,189; */
+        /* --now-color_divider--secondary:69,77,91; */
+        /* --now-color_divider--tertiary:53,59,73; */
+        --now-color_focus-ring: 255, 121, 198;
+        /* --now-color_selection--secondary-0:42,43,82; */
+        /* --now-color_selection--secondary-1:87,88,168; */
+        --now-color_selection--secondary-2: 255, 121, 198;
+        --now-color_selection--secondary-3: 163, 149, 20;
+        /* --now-color_selection--secondary-4:228,228,255; */
+        /* --now-color_surface--brand-3:69,70,133; */
+        /* --now-color_surface--brand-4:90,91,173; */
+        /* --now-color_surface--brand-5:111,113,214; */
+        --now-color_surface--brand-6: 255, 121, 198;
+        --now-content-tree_label--color--loading: 255, 121, 198;
+        --now-content-tree_placeholder--color--active: 163, 149, 20;
+        --now-content-tree_placeholder--color--hover: 255, 121, 198;
+        --now-content-tree_trigger--background-color--active: 255, 184, 108;
+        --now-content-tree_trigger--background-color--hover: 255, 184, 108;
+        --now-content-tree_trigger--color--hover: 255, 121, 198;
+        --now-date-time_cell--background-color--active: 255, 121, 198;
+        --now-date-time_cell--background-color--adjacent_active: 255, 121, 198;
+        --now-date-time_cell--background-color--adjacent_hover: 255, 121, 198;
+        --now-date-time_cell--background-color--hover: 255, 121, 198;
+        --now-date-time_cell--background-color--now_active: 255, 121, 198;
+        --now-date-time_cell--background-color--now_hover: 255, 121, 198;
+        --now-date-time_cell--background-color--preview: 68, 71, 90;
+        --now-date-time_cell--background-color--range: 68, 71, 90;
+        --now-date-time_cell--background-color--range_active: 68, 71, 90;
+        --now-date-time_cell--background-color--range_hover: 189, 147, 249;
+        --now-date-time_cell--background-color--selected: 255, 121, 198;
+        --now-date-time_cell--background-color--selected_active: 163, 149, 20;
+        --now-date-time_cell--background-color--selected_hover: 255, 184, 108;
+        --now-date-time_cell--border-color--now: 255, 121, 198;
+        --now-date-time_cell--border-color--now_active: 163, 149, 20;
+        --now-date-time_cell--border-color--now_hover: 255, 184, 108;
+        --now-date-time_cell--color--now: 255, 121, 198;
+        --now-date-time_cell--color--now_active: 163, 149, 20;
+        --now-date-time_cell--color--now_hover: 255, 184, 108;
+        --now-form-field--background-color--opened: 40, 42, 54;
+        --now-form-field--border-color--focus: 255, 121, 198;
+        --now-form-field--border-color--hover: 255, 121, 198;
+        --now-form-field--border-color--opened: 255, 121, 198;
+        --now-form-field_inset--color--hover: 163, 149, 20;
+        --now-loader_icon--color: 255, 121, 198;
+        --now-loading--initial--background-color: 255, 121, 198;
+        --now-loading--initial--border-color: 255, 184, 108;
+        --now-pagination-control--background-color--active: 255, 184, 108;
+        --now-pagination-control--background-color--hover: 255, 184, 108;
+        --now-pagination-control--color--active: 163, 149, 20;
+        --now-pagination-control--color--hover: 255, 184, 108;
+        --now-pill--background-color--active: 40, 42, 54;
+        --now-pill--background-color--selected: 255, 121, 198;
+        --now-pill--background-color--selected_active: 163, 149, 20;
+        --now-pill--background-color--selected_hover: 255, 184, 108;
+        --now-pill--border-color--active: 255, 121, 198;
+        --now-pill--border-color--selected: 255, 121, 198;
+        --now-pill--border-color--selected_active: 163, 149, 20;
+        --now-pill--border-color--selected_hover: 255, 184, 108;
+        --now-pill--color--active: 255, 184, 108;
+        --now-pill--color--hover: 255, 121, 198;
+        --now-pill_identifier--background-color--active: 40, 42, 54;
+        --now-pill_identifier--background-color--selected: 40, 42, 54;
+        --now-pill_identifier--background-color--selected_active: 40, 42, 54;
+        --now-pill_identifier--background-color--selected_hover: 40, 42, 54;
+        --now-pill_identifier--border-color--active: 255, 121, 198;
+        --now-pill_identifier--border-color--selected: 255, 121, 198;
+        --now-pill_identifier--border-color--selected_active: 163, 149, 20;
+        --now-pill_identifier--border-color--selected_hover: 255, 184, 108;
+        --now-pill_identifier--color--active: 255, 184, 108;
+        --now-pill_identifier--color--hover: 255, 121, 198;
+        --now-pill_identifier--color--selected: 255, 184, 108;
+        --now-pill_identifier--color--selected_active: 255, 184, 108;
+        --now-pill_identifier--color--selected_hover: 255, 184, 108;
+        --now-radio-buttons--background-color--active: 40, 42, 54;
+        --now-radio-buttons--background-color--hover: 40, 42, 54;
+        --now-radio-buttons--border-color--active: 255, 121, 198;
+        --now-radio-buttons--border-color--focus: 255, 121, 198;
+        --now-radio-buttons--border-color--hover: 255, 121, 198;
+        --now-radio-buttons_radio--background-color--hover: 255, 121, 198;
+        --now-radio-buttons_radio--background-color--readonly: 255, 121, 198;
+        --now-radio-buttons_radio--background-color: 255, 121, 198;
+        --now-text-link--primary--color--active: 0, 129, 214;
+        --now-text-link--primary--color--hover: 255, 184, 108;
+        --now-text-link--primary--color: 255, 121, 198;
+        --now-text-link--secondary--color--hover: 0, 129, 214;
+        --now-text-link--secondary--color: 255, 184, 108;
+        --now-toggle_track--background-color--checked: 255, 121, 198;
+        --now-toggle_track--border-color--checked: 248, 248, 242;
+        /* --now-unified-nav_button--background-color--active:83,82,106; */
+        /* --now-unified-nav_button--background-color--hover:83,82,106; */
+        /* --now-unified-nav_button--background-color:83,82,106; */
+        --now-unified-nav_focus-ring--color: 255, 121, 198;
+        /* --now-unified-nav_menu--background-color:48,47,75; */
+        /* --now-unified-nav_menu--border-color:93,92,111; */
+        /* --now-unified-nav_menu-button-iconic--background-color--active:83,82,106; */
+        /* --now-unified-nav_menu-button-iconic--background-color--hover:83,82,106; */
+        /* --now-unified-nav_menu-button-iconic--background-color:83,82,106; */
+        /* --now-unified-nav_menu-divider-horizontal--color:119,118,133; */
+        /* --now-unified-nav_menu-divider-vertical--color:209,210,238; */
+        /* --now-unified-nav_menu-filter--border-color--opened:69,85,175; */
+        /* --now-unified-nav_menu-filter--border-color:144,144,156; */
+        /* --now-unified-nav_menu-item--background-color--active:29,28,45; */
+        /* --now-unified-nav_menu-item--background-color--hover:29,28,45; */
+        /* --now-unified-nav_menu-scrollbar--color:93,92,111; */
+        /* --now-unified-nav_menu-subitem--color:209,210,238; */
+        /* --now-unified-nav_menu-sublabel--color:193,197,205; */
+        /* --now-unified-nav_nav-menu-trigger--background-color--active:83,82,106; */
+        /* --now-unified-nav_nav-menu-trigger--background-color--hover:83,82,106; */
+        /* --now-unified-nav_nav-menu-trigger--background-color:83,82,106; */
+        /* --now-unified-nav_utility-menu-trigger--background-color--active:83,82,106; */
+        /* --now-unified-nav_utility-menu-trigger--background-color--hover:83,82,106; */
+        /* --now-unified-nav_utility-menu-trigger--background-color:83,82,106; */
+    }
+}
