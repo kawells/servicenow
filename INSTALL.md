@@ -8,5 +8,5 @@
 - **Firefox**: Install Stylus from [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/).
 
 2. Visit [Install Theme](https://raw.githubusercontent.com/dracula/servicenow/main/servicenow-dracula.css)
-3. Click the "Install" button;
+3. Click the "Install" button
 4. The theme will automatically apply to ServiceNow pages
